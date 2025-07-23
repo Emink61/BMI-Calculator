@@ -1,8 +1,11 @@
+#import tkinter for window
 import tkinter as tk
 
+#Creating Window
 window = tk.Tk()
 window.geometry("250x300")
 
+#Button Function
 def clicking():
     Name = entry1.get()
     Age = entry2.get()
@@ -40,6 +43,7 @@ def clicking():
 
     print("All saved")
 
+#Editing the Page
 writing = tk.Label(window, text="BMI Calculator", font=("Arial",20))
 writing.place(x=30,y=10)
 Name = tk.Label(window, text="Enter Name:")
@@ -59,6 +63,7 @@ entry3.place(x=90,y=120)
 entry4 = tk.Entry()
 entry4.place(x=90,y=150)
 
+#Creating Button
 button1 = tk.Button(window, height=1, width=8, text="Save", command=clicking)
 button1.place(x=80,y=210)
 window.mainloop()
